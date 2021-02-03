@@ -1,0 +1,39 @@
+#face{
+    width: 25rem;
+    height: auto;
+
+}
+
+
+
+.work
+{
+    width: 15rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.workcol
+{
+
+}
+
+
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content
+{
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
