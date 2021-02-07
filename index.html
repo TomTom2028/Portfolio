@@ -5,118 +5,116 @@
     <title>Portfolio</title>
     <link rel="icon" href="img/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/index-style.css">
 </head>
 <body>
-<div class="content">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ps-3">
-            <div class="navbar-brand"><img src="img/logo.svg" alt="logo"></div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About me</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            My works
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Chonkchannels</a></li>
-                            <li><a class="dropdown-item" href="#">Ticketbot</a></li>
-                            <li><a class="dropdown-item" href="#">Ulocation</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <div class="content">
+        <nav class="nav">
+            <div class="navbar-content">
+                <a href="#">About me</a>
+                <a href="#">My works</a>
+                <img class="svg" src="img/logo.svg">
             </div>
         </nav>
-    </header>
-    <main>
-        <div class="container-fluid px-md-5 pt-4">
-            <div class="row pb-3">
-                <div class="col-md mb-2">
-                    <h1 class="font-weight-bolder text-center text-md-start">Hi, I'm Robbe Hovaert!</h1>
-                    <p class="font-weight-lighter text-center text-md-start">I am a full stack developer</p>
-                    <div class="text-center text-md-start">
-                        <a class="btn btn-primary" href="#" role="button">Learn more about me</a>
-                    </div>
-                </div>
-                <div class="col-md text-center text-md-left">
-                    <img id="face" class="img-fluid img-thumbnail" src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/69253107_722317391564424_8002583421836591104_o.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=ARbbP053dBAAX-s7fLa&_nc_ht=scontent-bru2-1.xx&oh=56b4fbd0dc11fbc85bfc18a4473f8148&oe=604026B3" alt="...">
-                </div>
-            </div>
-            <div class="row">
-                <h2 id="my-best-works" class="font-weight-bold text-center">My best works</h2>
-            </div>
-            <div class="row card-deck works">
-                <div class="card img-thumbnail work mx-auto mx-md-0">
-                    <div class="card-img-top workimg">
-                        <img src="img/chonkLogo.jpg" alt="IMG">
-                    </div>
-                    <hr>
-                    <div class="card-body cardMyBody">
-                        <h5 class="card-title cardTitle">Chonkchannels</h5>
-                        <p class="card-text mx-1">A discord bot that dynamically creates new voice channels as they are needed.
-                            (and deletes them to!)
-                        </p>
-                        <div class="card-button">
-                            <a href="#" class="btn btn-primary">Learn more</a>
+        <main>
+            <div id="main-content">
+                <div id="intro-row" class="row">
+                    <div id="intro-left">
+                        <div id="intro">
+                            <h1>Hi! I'm Robbe Hovaert</h1>
+                            <p>I'm a full stack developer</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#">Learn more about me</a>
                         </div>
                     </div>
-                </div>
-                <div class="card img-thumbnail work mx-auto mx-md-0">
-                    <div class="card-img-top workimg">
-                        <img src="img/tygohost_icon.png" alt="IMG">
+                    <div></div>
+                    <div id="face-img-container">
+                        <img src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/69253107_722317391564424_8002583421836591104_o.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=ARbbP053dBAAX-s7fLa&_nc_ht=scontent-bru2-1.xx&oh=56b4fbd0dc11fbc85bfc18a4473f8148&oe=604026B3">
                     </div>
-                    <hr>
-                    <div class="card-body cardMyBody">
-                        <h5 class="card-title">Tygohost ticket bot</h5>
-                        <p class="card-text mx-1">A discord bot that I created for the company
-                            <a class="link-primary my-link" href="https://tygohost.com/">Tygohost</a>. It handles the support tickets in their discord server.
-                        </p>
-                        <div class="card-button">
-                            <a href="#" class="btn btn-primary">Learn more</a>
+                    <div></div>
+                </div>
+                <h2 id="bestworks-text" class="row">My best works</h2>
+                <div class="row" id="card-row">
+                    <div class="card">
+                        <div>
+                            <div class="card-img">
+                                <img src="img/chonkLogo.jpg">
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="card-text">
+                            <div>
+                                <h4>ChonkChannels</h4>
+                                <p>A discord bot that dynamically creates new voice channels as they are needed. (and deletes them to!)
+                                </p>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Learn more</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card img-thumbnail work mx-auto mx-md-0">
-                    <div class="card-img-top workimg">
-                        <img src="img/Ulocation-svg.svg" alt="IMG">
-                    </div>
-                    <hr>
-                    <div class="card-body cardMyBody">
-                        <h5 class="card-title cardTitle">Ulocation</h5>
-                        <p class="card-text mx-1">Ulocation is a social networking serverice that i created with a few others for a college couse.
-                            It allows the user to chat and view/upload posts with users that are nearby.
-                        </p>
-                        <div class="card-button">
-                            <a href="#" class="btn btn-primary">Learn more</a>
+
+                    <div class="card">
+                        <div>
+                            <div class="card-img">
+                                <img src="img/tygohost_icon.png">
+                            </div>
                         </div>
+                        <hr>
+                        <div class="card-text">
+                            <div>
+                                <h4>Tygohost ticket bot</h4>
+                                <p>A discord bot that I created for the company <a href="https://tygohost.com/">Tygohost</a>. It handles the support tickets in their discord server.
+                                </p>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="card-img">
+                                <img src="img/Ulocation-svg.svg">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card-text">
+                            <div>
+                                <h4>Ulocation</h4>
+                                <p>Ulocation is a social networking serverice that i created with a few others for a college couse. It allows the user to chat and view/upload posts with users that are nearby.
+                                </p>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="worktogether-background">
+                <div>
+                    <h3>Want to do a project together?</h3>
+                    <div class="btn">
+                        <a href="#">Contact me</a>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="my-work-together-bg" class="no-padding">
-            <div id="my-work-together-box">
-                <h2 id="my-work-together-text">Want to work together?</h2>
-                <a href="mailto:robbe.hovaert@gmail.com" class="btn btn-secondary btn-lg">Contact me</a>
-            </div>
-
-        </div>
-
-    </main>
-</div>
-<footer class="footer mt auto py-3 bg-light">
-    <div class="container">
-        <span class="text-muted">Footer will come here</span>
+        </main>
     </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <footer class="footer">
+        MA FOOTER
+    </footer>
+    <script src="https://livejs.com/live.js"></script>
 </body>
+
 </html>
