@@ -1,12 +1,4 @@
-#intro{
-    display: inline-block;
-    padding-right: 2rem;
-}
 
-#intro > p{
-
-    text-align: right;
-}
 
 #worktogether-background{
     width: 100%;
@@ -34,7 +26,7 @@
     margin: 2rem;
 }
 
-.row{
+.self-row{
     padding-bottom: 2.5rem;
 }
 
@@ -49,20 +41,52 @@
     align-self: center;
 }
 
-#intro-row{
+
+@media screen and (max-width: 768px){
+    #intro-text > *{
+        text-align: center;
+    }
+}
+
+
+.card{
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 1030px){
+
+    #intro-text > p{
+        text-align: right;
+        max-width: 33rem;
+    }
+
+}
+
+#card-row{
+    padding-top: 1rem;
+}
+
+#intro-row {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    align-self: center;
+
+
 }
 
 #intro-left{
     justify-self: start;
     display: flex;
     flex-direction: column;
+
 }
+
+
+
 
 #face-img-container{
     max-width: 20rem;
+
 }
 
 #face-img-container img{
