@@ -27,7 +27,7 @@
 }
 
 .self-row{
-    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 #card-row{
@@ -45,6 +45,12 @@
 @media screen and (max-width: 768px){
     #intro-text > *{
         text-align: center;
+    }
+    .self-row{
+        margin-bottom: 0;
+    }
+    #intro-row{
+        padding-bottom: 1rem;
     }
 }
 
