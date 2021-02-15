@@ -10,16 +10,20 @@
     <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/footer-style.css">
     <link rel="stylesheet" href="css/index-style.css">
+
+    <script src="js/jquery-3.5.1.js"></script>
+
+    <script>
+        $(function(){
+            $("#nav_cont").load("templates/navbar.html");
+            $("#footer_cont").load("templates/footer.html")
+        });
+    </script>
+
 </head>
 <body>
     <div class="content">
-        <nav class="nav">
-            <div class="navbar-content">
-                <a href="#">About me</a>
-                <a href="#">My works</a>
-                <img class="svg" src="img/logo.svg">
-            </div>
-        </nav>
+        <div id="nav_cont"></div>
         <main>
             <div id="main-content">
                 <div id="intro-row" class="self-row row">
@@ -110,9 +114,7 @@
 
         </main>
     </div>
-    <footer class="footer">
-        MA FOOTER
-    </footer>
+    <div id="footer_cont" class="footer"></div>
     <script src="https://livejs.com/live.js"></script>
 </body>
 

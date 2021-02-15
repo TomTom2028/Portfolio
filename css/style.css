@@ -2,17 +2,23 @@
 @import "reset.css";
 /*
     theme: https://coolors.co/333333-e83151-fcfaf9-0077b6-7e8d85
+    dark theme:
 */
 
 
 :root{
     font-family: 'Montserrat', sans-serif !important;
     font-size: 16px;
+
+
     --color1: #333333;
     --color2: #fcfaf9;
     --color3: #e83151;
     --color4: #0077b6;
     --color5: #7e8d85;
+
+    --color6: #141414;
+    --color7: #1f1f1f;
 
 
     --text-color: var(--color1);
@@ -26,6 +32,14 @@
     --btn-text-color: var(--color2);
     --btn-background-color: var(--color4);
 }
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --bg-normal: var(--color6);
+        --text-color: var(--color2);
+    }
+}
+
 
 .card{
     display: flex;
@@ -134,8 +148,11 @@ h4{
     color: var(--text-color);
     font-size: 150%;
 }
-p{
+p {
     color: var(--text-color);
+}
+
+p, a{
     line-height: 1.6;
 }
 
